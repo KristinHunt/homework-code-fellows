@@ -24,7 +24,11 @@ class ViewController: UIViewController, UITableViewDataSource {
     self.villain.append(friday13)
     self.villain.append(halloween)
     self.villain.append(elmStreet)
-    
+  }
+  
+  override func viewWillAppear(animated: Bool) {
+    super.viewWillAppear(animated)
+    self.tableView.reloadData()
   }
   
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -36,37 +40,30 @@ class ViewController: UIViewController, UITableViewDataSource {
     let cell = self.tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! UITableViewCell
     
     let villainToShow = self.villain[indexPath.row]
-    cell.textLabel?.text = villainToShow.firstName + " " + villainToShow.lastName
     
+    if let image = villainToShow.image {
+      cell.imageView?.image = image
+    }
+    
+    cell.textLabel?.text = villainToShow.firstName + " " + villainToShow.lastName
     return cell
-
   }
   
   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
     if segue.identifier == "ShowDetailViewController" {
       
-      let detailViewController = segue.destinationViewController as! DetailViewController
-      
-      let indexPath = self.tableView.indexPathForSelectedRow()
-      let selectedRow = indexPath!.row
+      if let detailViewController = segue.destinationViewController as? DetailViewController {
+        let myIndexPath = self.tableView.indexPathForSelectedRow()
+        
+      if let indexPath = self.tableView.indexPathForSelectedRow() {
+        let selectedRow = indexPath.row
+          
       let selectedVillain = self.villain[selectedRow]
       detailViewController.selectedVillain = selectedVillain
-      
+        
+      println(selectedVillain.firstName + selectedVillain.lastName)
     }
   }
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+}

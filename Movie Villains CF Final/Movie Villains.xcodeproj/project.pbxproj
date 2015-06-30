@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C13CA9CF1B3B1F290082A726 /* Villains.plist in Resources */ = {isa = PBXBuildFile; fileRef = C13CA9CE1B3B1F290082A726 /* Villains.plist */; };
 		C144970A1B29D6C300363181 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C14497091B29D6C300363181 /* AppDelegate.swift */; };
 		C144970C1B29D6C300363181 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C144970B1B29D6C300363181 /* ViewController.swift */; };
 		C144970F1B29D6C300363181 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C144970D1B29D6C300363181 /* Main.storyboard */; };
@@ -15,7 +16,8 @@
 		C14497201B29D6C300363181 /* Movie_VillainsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C144971F1B29D6C300363181 /* Movie_VillainsTests.swift */; };
 		C144972D1B29DCDD00363181 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C144972C1B29DCDD00363181 /* Person.swift */; };
 		C144972F1B29EC3E00363181 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C144972E1B29EC3E00363181 /* DetailViewController.swift */; };
-		C1794A4C1B389899003217DA /* FreddyJasonMichael.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C1794A4B1B389899003217DA /* FreddyJasonMichael.jpg */; };
+		C15B6D2B1B39A8460008A8DB /* FreddyJasonMichael.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C15B6D2A1B39A8460008A8DB /* FreddyJasonMichael.jpg */; };
+		C15B6D2D1B3A0A210008A8DB /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C15B6D2C1B3A0A210008A8DB /* PersonCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C13CA9CE1B3B1F290082A726 /* Villains.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Villains.plist; sourceTree = "<group>"; };
 		C14497041B29D6C300363181 /* Movie Villains.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie Villains.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14497081B29D6C300363181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C14497091B29D6C300363181 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +44,8 @@
 		C144971F1B29D6C300363181 /* Movie_VillainsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie_VillainsTests.swift; sourceTree = "<group>"; };
 		C144972C1B29DCDD00363181 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		C144972E1B29EC3E00363181 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		C1794A4B1B389899003217DA /* FreddyJasonMichael.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FreddyJasonMichael.jpg; sourceTree = "<group>"; };
+		C15B6D2A1B39A8460008A8DB /* FreddyJasonMichael.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FreddyJasonMichael.jpg; sourceTree = "<group>"; };
+		C15B6D2C1B3A0A210008A8DB /* PersonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +101,8 @@
 		C14497071B29D6C300363181 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C1794A4B1B389899003217DA /* FreddyJasonMichael.jpg */,
+				C13CA9CE1B3B1F290082A726 /* Villains.plist */,
+				C15B6D2A1B39A8460008A8DB /* FreddyJasonMichael.jpg */,
 				C14497081B29D6C300363181 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -141,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				C144970D1B29D6C300363181 /* Main.storyboard */,
+				C15B6D2C1B3A0A210008A8DB /* PersonCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -225,8 +231,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C13CA9CF1B3B1F290082A726 /* Villains.plist in Resources */,
 				C144970F1B29D6C300363181 /* Main.storyboard in Resources */,
-				C1794A4C1B389899003217DA /* FreddyJasonMichael.jpg in Resources */,
+				C15B6D2B1B39A8460008A8DB /* FreddyJasonMichael.jpg in Resources */,
 				C14497141B29D6C300363181 /* LaunchScreen.xib in Resources */,
 				C14497111B29D6C300363181 /* Images.xcassets in Resources */,
 			);
@@ -247,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C144972D1B29DCDD00363181 /* Person.swift in Sources */,
+				C15B6D2D1B3A0A210008A8DB /* PersonCell.swift in Sources */,
 				C144970C1B29D6C300363181 /* ViewController.swift in Sources */,
 				C144970A1B29D6C300363181 /* AppDelegate.swift in Sources */,
 				C144972F1B29EC3E00363181 /* DetailViewController.swift in Sources */,

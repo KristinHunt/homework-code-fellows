@@ -27,7 +27,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="gds-TV-o4f" kind="show" identifier="ShowDetailViewController" id="FeJ-hg-t3D"/>
+                                            <segue destination="gds-TV-o4f" kind="show" identifier="ShowDetailViewController" id="ghl-c2-ztH"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -62,30 +62,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNy-0Q-7Ds">
-                                <rect key="frame" x="279" y="290" width="42" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="782-Xc-SHc">
-                                <rect key="frame" x="279" y="318.5" width="42" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3fp-Rp-wix">
+                                <rect key="frame" x="255" y="72" width="91.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qCh-2C-rVb">
+                                <rect key="frame" x="255" y="110" width="90.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="FreddyJasonMichael.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qjm-YG-vjy">
+                                <rect key="frame" x="165.5" y="148" width="269" height="187"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="WNy-0Q-7Ds" secondAttribute="centerY" id="Bge-g0-Hta"/>
-                            <constraint firstAttribute="centerX" secondItem="WNy-0Q-7Ds" secondAttribute="centerX" id="G8z-0n-b1Z"/>
-                            <constraint firstAttribute="centerX" secondItem="782-Xc-SHc" secondAttribute="centerX" id="fzJ-Z8-wqn"/>
-                            <constraint firstItem="782-Xc-SHc" firstAttribute="top" secondItem="WNy-0Q-7Ds" secondAttribute="bottom" constant="8" id="ptT-Zy-jQ4"/>
+                            <constraint firstItem="qjm-YG-vjy" firstAttribute="top" secondItem="qCh-2C-rVb" secondAttribute="bottom" constant="8" id="7TG-q1-cu7"/>
+                            <constraint firstAttribute="centerX" secondItem="3fp-Rp-wix" secondAttribute="centerX" id="CaU-zh-xvc"/>
+                            <constraint firstItem="3fp-Rp-wix" firstAttribute="top" secondItem="4ho-R2-XwG" secondAttribute="bottom" constant="8" id="Wxl-cO-no3"/>
+                            <constraint firstAttribute="centerX" secondItem="qjm-YG-vjy" secondAttribute="centerX" id="gh2-Pz-S24"/>
+                            <constraint firstItem="qCh-2C-rVb" firstAttribute="top" secondItem="3fp-Rp-wix" secondAttribute="bottom" constant="8" id="iVh-mi-bT1"/>
+                            <constraint firstAttribute="centerX" secondItem="qCh-2C-rVb" secondAttribute="centerX" id="kfJ-RE-PAI"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="firstNameLabel" destination="WNy-0Q-7Ds" id="dH1-7B-VfV"/>
-                        <outlet property="lastNameLabel" destination="782-Xc-SHc" id="T86-MF-y8N"/>
+                        <outlet property="firstNameTextLabel" destination="3fp-Rp-wix" id="UaM-GH-YZL"/>
+                        <outlet property="imageView" destination="qjm-YG-vjy" id="uNU-Ez-QhI"/>
+                        <outlet property="lastNameTextLabel" destination="qCh-2C-rVb" id="KYe-8T-NFn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4B8-zE-ZQV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -111,4 +115,7 @@
             <point key="canvasLocation" x="1118" y="730"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="FreddyJasonMichael.jpg" width="269" height="187"/>
+    </resources>
 </document>
